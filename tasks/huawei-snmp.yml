@@ -1,0 +1,7 @@
+- name: testing huwaei
+  huawei_vrp_command:
+    commands:
+      - display interface description
+- name: Display interface information
+  debug:
+    var: result.stdout_lines

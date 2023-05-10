@@ -1,0 +1,8 @@
+- name: Entering conf t
+  ios_config:
+    lines:
+      - conf t
+- name: Enable snmp
+  ios_config:
+    lines:
+      - do show interface all

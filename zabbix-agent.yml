@@ -1,0 +1,9 @@
+- name: Install snmp cisco
+  hosts: snmp
+  tasks:
+  - incldue_tasks: tasks/cisco-snmp.yml
+- name: Install snmp huwaei
+  hosts: huawei
+  tasks:
+  - incldue_tasks: tasks/huawei-snmp.yml
+  
