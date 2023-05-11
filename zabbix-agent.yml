@@ -1,7 +1,11 @@
 - name: Install snmp huwaei
   hosts: huawei
-  vars:
-    ansible_ssh_common_args: '-oKexAlgorithms=diffie-hellman-group14-sha1'
   tasks:
-  - incldue_tasks: tasks/huawei-snmp.yml
+  - name: Display clock
+    ansible.netmiko_send_command:
+      command_string: display clock
+    register: result
+  - name: Print result
+    debug:
+      var: result.stdout_lines
   
