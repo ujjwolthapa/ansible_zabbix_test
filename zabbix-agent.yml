@@ -1,4 +1,4 @@
-- name: Execute command on Huawei switch
+- name: testing
   hosts: huwaei
   gather_facts: no
   tasks:
