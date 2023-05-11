@@ -1,9 +1,7 @@
-- name: Install snmp cisco
-  hosts: snmp
-  tasks:
-  - incldue_tasks: tasks/cisco-snmp.yml
 - name: Install snmp huwaei
   hosts: huawei
+  vars:
+    ansible_ssh_common_args: '-oKexAlgorithms=diffie-hellman-group14-sha1'
   tasks:
   - incldue_tasks: tasks/huawei-snmp.yml
   
