@@ -1,3 +1,0 @@
-ansible_host:192.168.17.1
-ansible_user:admin
-ansible_ssh_pass:N+@adm!n_asw

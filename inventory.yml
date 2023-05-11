@@ -1,0 +1,7 @@
+all:
+  hosts:
+    host1:
+      ansible_ssh_common_args: '-o KexAlgorithms=diffie-hellman-group14-sha1'
+      ansible_host: 192.168.16.1
+      ansible_user: admin
+      ansible_ssh_pass: N+@adm!n_asw
