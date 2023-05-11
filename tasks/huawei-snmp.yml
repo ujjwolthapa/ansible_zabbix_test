@@ -1,8 +1,7 @@
-- name: Display version
-  ansible.netmiko_send_command:
-    command_string: display version
-  register: result
-
-- name: Print result
+- name: testing huwaei
+  huawei_vrp_command:
+    commands:
+      - display interface description
+- name: Display interface information
   debug:
     var: result.stdout_lines

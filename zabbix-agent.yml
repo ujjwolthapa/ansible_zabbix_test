@@ -1,5 +1,5 @@
-- name: testing
-  hosts: huwaei
-  gather_facts: no
+- name: Install snmp huwaei
+  hosts: huawei
   tasks:
-    include_tasks: tasks/huawei-snmp.yml
+  - incldue_tasks: tasks/huawei-snmp.yml
+  
